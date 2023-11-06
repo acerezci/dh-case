@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .badge {
+  background-color: var(--black-200);
+  color: var(--white);
+  padding: 6px;
+  border-radius: 6px;
+}

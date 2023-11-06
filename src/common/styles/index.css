@@ -1,0 +1,10 @@
+@import "reset.css";
+@import "variables.css";
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: var(--white-100);
+}

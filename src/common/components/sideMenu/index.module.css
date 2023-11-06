@@ -1,0 +1,33 @@
+.container {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 30px - 30px);
+  padding: 30px;
+}
+
+.container div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 54px;
+}
+
+.container svg {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+
+.container svg:hover {
+  transition: 0.4s;
+  background-color: var(--white-200);
+}
+
+.active {
+  background-color: var(--white-200) !important;
+}
