@@ -1,0 +1,13 @@
+.container {
+  background-color: var(--white-200);
+  padding: 12px;
+  color: var(--black-200);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container svg {
+  margin: 0 4px;
+}

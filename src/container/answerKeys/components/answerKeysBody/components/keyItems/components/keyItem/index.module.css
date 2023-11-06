@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 6px;
+  background-color: var(--blue-300);
+  border-radius: 10px;
+  margin-top: 10px;
+  pointer-events: none;
+}
+
+.container .label {
+  color: var(--black-200);
+  font-size: 14px;
+  margin-right: 6px;
+}
+
+.container .options {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+
+.container .options .option {
+  border: 1px solid var(--blue-200);
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+}
+
+.container .options .option .active {
+  background-color: var(--blue-400);
+}

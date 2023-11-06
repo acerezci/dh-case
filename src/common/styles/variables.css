@@ -2,7 +2,19 @@
   --white: #ffffff;
   --white-100: #f9f9f9;
   --white-200: #e2e2e2;
+  --white-300: #f4f4f4;
+  --white-400: #607b96;
 
   --black-100: #1e2029;
   --black-200: #2c3e50;
+  --black-300: #b0b0b0;
+
+  --green-100: #1ca78c;
+
+  --yellow-100: #f7d54c;
+
+  --blue-100: #35c2ff;
+  --blue-200: #03a9f1;
+  --blue-300: #73d5ff;
+  --blue-400: #0f98d2;
 }

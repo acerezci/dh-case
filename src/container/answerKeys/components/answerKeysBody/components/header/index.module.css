@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container .lesson {
+  color: var(--black-200);
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.container .lesson span {
+  color: var(--white-400);
+  font-size: 12px;
+  margin-top: 6px;
+}

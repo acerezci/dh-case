@@ -1,2 +1,10 @@
 .container {
+  background-color: var(--white);
+  padding: 20px;
+  min-height: 650px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 10px;
 }

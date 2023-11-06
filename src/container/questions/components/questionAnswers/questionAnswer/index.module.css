@@ -1,0 +1,52 @@
+.container {
+  background-color: var(--white-100);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.container:hover {
+  transition: 0.6s;
+  background-color: var(--white-300);
+}
+
+.active {
+  background-color: var(--black-300);
+  transition: 0.6s;
+}
+
+.active:hover {
+  background-color: var(--black-300);
+}
+
+.active:hover .answerButton {
+  opacity: 0 !important;
+}
+
+.container .leftContainer {
+  display: flex;
+  align-items: center;
+}
+
+.container .optionName {
+  margin-right: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.container .optionName svg {
+  margin-right: 6px;
+}
+
+.answerButton {
+  opacity: 0;
+}
+
+.container:hover .answerButton {
+  transition: 0.6s;
+  opacity: 1;
+}

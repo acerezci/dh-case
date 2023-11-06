@@ -1,0 +1,6 @@
+.container {
+  background-color: var(--green-100);
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: var(--white);
+}
