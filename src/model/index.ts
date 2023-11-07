@@ -3,6 +3,7 @@ export interface IQuestion {
   lesson: string;
   question: string;
   correctAnswer: AnswerType;
+  currentAnswer: AnswerType | any;
   answers: IAnswers[];
 }
 

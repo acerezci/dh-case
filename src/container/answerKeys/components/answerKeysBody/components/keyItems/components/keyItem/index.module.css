@@ -5,7 +5,7 @@
   margin-bottom: 6px;
   background-color: var(--blue-300);
   border-radius: 10px;
-  margin-top: 10px;
+  margin-top: 16px;
   pointer-events: none;
 }
 
@@ -32,6 +32,6 @@
   margin-right: 6px;
 }
 
-.container .options .option .active {
-  background-color: var(--blue-400);
+.container .options .option.active {
+  background-color: var(--blue-400) !important;
 }

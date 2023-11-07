@@ -10,7 +10,7 @@ export const KeyItems = () => {
   return (
     <div className={styles.container}>
       {[...new Array(questionsCount)].map((_v, i) => (
-        <KeyItem correctAnswer={questions[i].correctAnswer} index={i} />
+        <KeyItem key={i} correctAnswer={questions[i].correctAnswer} index={i} />
       ))}
     </div>
   );

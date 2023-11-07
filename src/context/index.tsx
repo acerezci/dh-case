@@ -1,5 +1,5 @@
-import { AnswerType, IQuestion } from "../model";
-import { questions } from "../mock/data";
+import { IQuestion } from "../model";
+import { questions as _questions } from "../mock/data";
 import React, {
   PropsWithChildren,
   createContext,
@@ -13,11 +13,13 @@ export const useAppContext = () => useContext(AppContext);
 
 export const AppContextProvider = (props: PropsWithChildren<{}>) => {
   const { children } = props;
+  const questions = [..._questions];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState<IQuestion>(
     questions[0]
   );
-  const [answers, setAnswers] = useState<AnswerType[]>([]);
+  const [answeredQuestions, setAnsweredQuestions] = useState<IQuestion[]>([]);
+  const [finishedTest, setFinishedTest] = useState(false);
 
   const nextQuestion = () => {
     const nextIndex = currentIndex + 1;
@@ -54,8 +56,12 @@ export const AppContextProvider = (props: PropsWithChildren<{}>) => {
         prevQuestion,
         currentQuestion,
         questionsCount: questions.length,
-        answers,
-        setAnswers,
+        currentIndex,
+        questions,
+        answeredQuestions,
+        setAnsweredQuestions,
+        finishedTest,
+        setFinishedTest,
       }}
     >
       {children}
@@ -68,6 +74,10 @@ interface IAppContext {
   prevQuestion: () => void;
   currentQuestion: IQuestion;
   questionsCount: number;
-  setAnswers: (e: AnswerType[]) => void;
-  answers: AnswerType[];
+  currentIndex: number;
+  questions: IQuestion[];
+  setAnsweredQuestions: (e: IQuestion[]) => void;
+  answeredQuestions: IQuestion[];
+  setFinishedTest: (e: boolean) => void;
+  finishedTest: boolean;
 }

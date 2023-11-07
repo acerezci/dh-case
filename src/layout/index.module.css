@@ -1,6 +1,6 @@
 .bodyContainer {
   display: grid;
-  grid-template-columns: 97px 1fr 352px;
+  grid-template-columns: 100px 1fr 360px;
   column-gap: 24px;
 }
 

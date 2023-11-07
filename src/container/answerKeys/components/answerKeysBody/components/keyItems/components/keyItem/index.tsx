@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./index.module.css";
 import { AnswerType } from "../../../../../../../../model";
-import { useAppContext } from "../../../../../../../../context";
 import classNames from "classnames";
+import { useAppContext } from "../../../../../../../../context";
 
 export const KeyItem = (props: Props) => {
   const { index } = props;
-  const { answers } = useAppContext();
+  const { answeredQuestions } = useAppContext();
 
   const renderOptions = () => {
     const options: AnswerType[] = ["A", "B", "C", "D", "E"];
@@ -15,7 +15,7 @@ export const KeyItem = (props: Props) => {
       <div
         className={classNames(
           styles.option,
-          answers[index] === o && styles.active
+          answeredQuestions[index]?.currentAnswer === o && styles.active
         )}
         key={o}
       >
